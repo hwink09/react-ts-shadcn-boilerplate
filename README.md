@@ -1,83 +1,138 @@
-# React + TypeScript Boilerplate
+# React + TypeScript + shadcn/ui Boilerplate
 
-Modern and production-ready starter template for building web applications.
+Modern, production-ready starter template for building scalable web applications with React 19, TypeScript, and Tailwind CSS v4.
 
 **Created by:** [hwinkdev](https://github.com/hwink09) | [YouTube Channel](https://www.youtube.com/@hwinkdev.official)
 
 ---
 
-## ✨ What's Inside?
+## ✨ Tech Stack
 
-- ⚡ **Vite** - Fast development and build
-- ⚛️ **React 19** - Latest React version
-- 📘 **TypeScript** - Type safety
-- 🎨 **Tailwind CSS** - Easy styling
-- 🧩 **shadcn/ui** - Beautiful UI components
-- 🔄 **Redux Toolkit** - State management ready
-- 📏 **ESLint** - Code quality
+- ⚡ **Vite** - Lightning-fast build tool with HMR
+- ⚛️ **React 19.2.3** - Latest React with concurrent features
+- 📘 **TypeScript 5.9** - Full type safety and IntelliSense
+- 🎨 **Tailwind CSS v4** - Modern utility-first CSS framework
+- 🧩 **shadcn/ui** - Beautiful, accessible UI components
+- 🔄 **Redux Toolkit** - State management (structure ready)
+- 🚀 **SWC** - Super-fast React refresh
+- 📏 **ESLint 9** - Code quality and consistency
+- 🔍 **Path Aliases** - Clean imports with `@/` prefix
 
 ---
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate to project directory
+cd react-ts-shadcn-boilerplate
+
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
----
+### Available Scripts
 
-## 📁 Folder Structure
-
-```
-src/
-├── components/
-│   ├── forms/        # Form components (Input, etc.)
-│   ├── shared/       # Reusable components (Header, Footer)
-│   └── ui/           # shadcn/ui components (Button, etc.)
-├── hooks/            # Custom hooks (useAuth, etc.)
-├── layouts/          # Page layouts (AuthLayout, MainLayout)
-├── pages/            # Your pages (HomePage, LoginPage)
-├── redux/            # Redux store setup
-├── services/         # API calls
-├── types/            # TypeScript types
-└── lib/              # Utility functions
-```
-
----
-
-## 💡 How to Use
-
-### Adding a New Page
-1. Create a file in `src/pages/` (e.g., `AboutPage.tsx`)
-2. Import and use components from `src/components/`
-3. Wrap with a layout from `src/layouts/`
-
-### Adding UI Components
-Use shadcn/ui CLI to add components:
 ```bash
-npx shadcn@latest add [component-name]
+npm run dev      # Start development server (http://localhost:5173)
+npm run build    # Build for production
+npm run preview  # Preview production build locally
+npm run lint     # Run ESLint to check code quality
 ```
 
-### API Calls
-Create services in `src/services/` to handle API requests.
+---
+
+## 📁 Project Structure
+
+```
+react-ts-shadcn-boilerplate/
+├── public/                    # Static assets
+├── src/
+│   ├── @types/               # TypeScript type definitions
+│   │   └── auth.ts          # Authentication types
+│   ├── api/                  # API integration layer
+│   │   └── index.ts         # API client setup
+│   ├── assets/              # Images, fonts, etc.
+│   ├── components/
+│   │   ├── forms/           # Form components
+│   │   │   └── input.tsx    # Custom input component
+│   │   ├── shared/          # Reusable shared components
+│   │   │   ├── header.tsx   # App header
+│   │   │   └── footer.tsx   # App footer
+│   │   └── ui/              # shadcn/ui components
+│   │       └── button.tsx   # Button component
+│   ├── hooks/               # Custom React hooks
+│   │   └── useAuth.ts       # Authentication hook
+│   ├── lib/                 # Utility functions
+│   │   └── utils.ts         # Helper functions (cn, etc.)
+│   ├── pages/               # Page components
+│   │   ├── auth/
+│   │   │   └── LoginPage.tsx
+│   │   └── home/
+│   │       └── HomePage.tsx
+│   ├── redux/               # Redux state management
+│   │   └── store.ts         # Redux store configuration
+│   ├── routes/              # React Router setup
+│   │   └── index.tsx        # Route definitions
+│   ├── App.tsx              # Root component
+│   ├── main.tsx             # Application entry point
+│   └── index.css            # Global styles
+├── components.json          # shadcn/ui configuration
+├── eslint.config.ts         # ESLint configuration
+├── index.html               # HTML template
+├── package.json             # Dependencies and scripts
+├── tsconfig.json            # TypeScript configuration
+├── tsconfig.app.json        # TypeScript app configuration
+├── tsconfig.node.json       # TypeScript Node configuration
+└── vite.config.ts           # Vite configuration
+```
 
 ---
 
-## 📚 Learn More
+## 🎯 Features
 
-- [GitHub](https://github.com/hwink09)
-- [YouTube Tutorials](https://www.youtube.com/@hwinkdev.official)
+### 🔧 Pre-configured Setup
+- ✅ TypeScript strict mode enabled
+- ✅ Path aliases configured (`@/` points to `src/`)
+- ✅ ESLint with React and TypeScript rules
+- ✅ Tailwind CSS v4 with Vite plugin
+- ✅ shadcn/ui ready with `components.json`
+
+### 🏗️ Architecture Ready
+- ✅ Authentication structure (types, hooks, pages)
+- ✅ Redux Toolkit store structure
+- ✅ API layer foundation
+- ✅ Routing structure
+- ✅ Component organization (forms, shared, ui)
+- ✅ Custom hooks setup
+
+### 🎨 UI Components
+- Built with **Radix UI** primitives
+- Fully customizable with **Tailwind CSS**
+- Accessible by default
+- Dark mode ready
+- TypeScript definitions included
 
 ---
 
-## 📝 License
+## 👨‍💻 Author
 
-Free to use for your projects!
+**hwinkdev**
+- GitHub: [@hwink09](https://github.com/hwink09)
+- YouTube: [@hwinkdev.official](https://www.youtube.com/@hwinkdev.official)
+
+---
+
+Made with ❤️ using React + TypeScript + shadcn/ui
 
